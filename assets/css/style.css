@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Bebas Neue;
+    src: url(../fonts/BebasNeue-Regular.woff);
+}
+@font-face {
+    font-family: Bebas Neue;
+    src: url(../fonts/BebasNeue-Regular.woff2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Bebas Neue;
+}
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+.sidenav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+.sidenav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidenav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+.sidenav-item {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.sidenav-langs {
+    border-right: 2px solid #fff;
+    padding-right: 10px;
+}
+.sidenav-langs, .sidenav-langs span {
+    display: flex;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.sidenav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero {
+    height: 100vh;
+    padding-top: 80px;
+    background-size: cover;
+    background-image: url(../imgs/hero-bg.jpg);
+}
+.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
