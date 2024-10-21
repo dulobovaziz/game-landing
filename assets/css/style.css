@@ -2,16 +2,20 @@
     font-family: Bebas Neue;
     src: url(../fonts/BebasNeue-Regular.woff);
 }
+
 @font-face {
     font-family: Bebas Neue;
     src: url(../fonts/BebasNeue-Regular.woff2);
 }
+
 :root {
     --primary: #FFB548;
 }
+
 button {
     cursor: pointer;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -20,22 +24,27 @@ button {
     list-style-type: none;
     font-family: Bebas Neue;
 }
+
 .container {
     width: 1240px;
     margin: 0 auto;
 }
+
 .sidenav {
+    z-index: 10;
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
     position: fixed;
 }
+
 .sidenav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .sidenav-list {
     display: flex;
     align-items: center;
@@ -49,50 +58,60 @@ button {
     font-weight: 600;
     letter-spacing: 1px;
 }
+
 .sidenav-langs {
     border-right: 2px solid #fff;
     padding-right: 10px;
 }
-.sidenav-langs, .sidenav-langs span {
+
+.sidenav-langs,
+.sidenav-langs span {
     display: flex;
     color: white;
     font-size: 16px;
     font-family: sans-serif;
 }
+
 .sidenav-right {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .hero {
     height: 100vh;
     padding-top: 80px;
     background-size: cover;
     background-image: url(../imgs/hero-bg.jpg);
 
-    
+
 }
+
 .hero .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
+
 .hero-info {
     text-align: center;
 }
+
 .hero-title {
     font-size: 80px;
     letter-spacing: 3px;
     color: white;
     margin-bottom: -10px;
 }
+
 .hero-subtitle {
     font-size: 23px;
     color: white;
     letter-spacing: 2px;
     margin: 10px 0;
 }
+
 .hero-btn {
     padding: 12px 18px;
     font-size: 18px;
@@ -111,10 +130,12 @@ button {
     align-items: center;
     background-size: contain;
 }
+
 .social-img {
     width: 502px;
     height: 608px;
 }
+
 .social .container {
     display: flex;
     justify-content: space-between;
@@ -122,15 +143,18 @@ button {
     padding: auto 0;
     align-items: center;
 }
+
 .social-name {
     font-size: 24px;
     letter-spacing: 2px;
 }
+
 .social-title {
     font-size: 80px;
     letter-spacing: 3px;
     width: 60%;
 }
+
 .social-subtitle {
     font-size: 20px;
     font-family: sans-serif;
@@ -138,6 +162,7 @@ button {
     margin-left: 270px;
     line-height: 25px;
 }
+
 .social-line {
     width: 95%;
     background: #fff;
@@ -145,6 +170,7 @@ button {
     z-index: 10;
     margin: 10px 0 20px 0;
 }
+
 /* FEATURES */
 .features {
     background-image: url(../imgs/features-bg.jpg), linear-gradient(black, black);
@@ -157,6 +183,7 @@ button {
     align-items: center;
     position: relative;
 }
+
 .features-info {
     position: absolute;
     right: 0;
@@ -164,24 +191,29 @@ button {
     top: 230px;
     padding-left: 40px;
 }
+
 .features-name {
     font-size: 25px;
     letter-spacing: 2px;
 }
+
 .features-title {
     font-size: 80px;
     letter-spacing: 3px;
 }
+
 .features-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .features-item__title {
     font-size: 36px;
     color: var(--primary);
     letter-spacing: 2px;
 }
+
 .features-item__subtitle {
     font-size: 20px;
     color: white;
@@ -204,18 +236,21 @@ button {
     left: -40px;
     top: 12px;
 }
+
 .features-item:nth-child(1):before {
     background: #fff;
 }
+
 .features-item:nth-child(1):after {
     content: "";
     position: absolute;
     width: 2px;
     height: 120px;
-    background: #fff;    
+    background: #fff;
     left: -30px;
     top: 25px;
 }
+
 /* SYSTEM */
 .system {
     background-image: url(../imgs/system-bg.jpg), linear-gradient(black, black);
@@ -224,4 +259,161 @@ button {
     background-position: 100%;
     color: white;
     height: 100vh;
+    padding: 100px 0;
+}
+
+.system-name {
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.system-title {
+    font-size: 80px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.system-table,
+td {
+    border: 1px solid #979797;
+    border-collapse: collapse;
+}
+
+.system-table td {
+    padding: 18px;
+}
+
+.system-table__title {
+    color: var(--primary);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.system-table__subtitle {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.system-table {
+    width: 47%;
+    margin-top: 50px;
+}
+
+/* QUOTES */
+.quotes {
+    background-image: url(../imgs/quotes-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.quotes .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.quotes-info {
+    width: 38%;
+}
+
+.quotes-name {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.quotes-title {
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+
+.quotes-subtitle {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    margin: 15px 0;
+}
+.quotes-btn {
+    padding: 14px 20px;
+    background: var(--primary);
+    border: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.quotes-avatar {
+    display: flex;
+    align-items: center;
+    gap: 20px;  
+}
+.quotes-item {
+    background: #141414;
+    padding: 18px;
+    border-radius: 10px;
+    width: 450px;
+}
+.quotes-avatar__name {
+    color: var(--primary);
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.quotes-avatar__job {
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.quotes-item__title {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+    width: 90%;
+    margin: 15px 0;
+}
+.quotes-item__date {
+    font-size: 15px;
+    color: white;
+    font-family: sans-serif;
+}
+.quotes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.quotes-item:nth-child(2) {
+    margin-left: -200px;
+}
+/* NEWSLETTER */
+.newsletter {
+    background: black;
+    padding: 70px 0;
+}
+.newsletter .container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.newsletter-name {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.newsletter-title {
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+.newsletter-subtitle {
+    margin: 13px 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    width: 80%;
+}
+.newsletter-form__inp {
+    height: 50px;
+    width: 48%;
+}
+.newsletter-btn {
+    height: 50px;
+    width: 30%;
 }
