@@ -415,5 +415,59 @@ td {
 }
 .newsletter-btn {
     height: 50px;
-    width: 30%;
+    width: 25%;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    background: var(--primary);
+    border: none;
+    font-weight: 600;
+}
+.newsletter-form__inp::placeholder {
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+/* FOOTER */
+.footer {
+    background: #000;
+    color: white;
+}
+.footer-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+.footer-line {
+    margin-top: 25px;
+    border-top: 1px solid #fff;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.footer-icons {
+    display: flex;
+    gap: 45px;
+} 
+.footer-icons > * {
+    font-size: 20px;
+    cursor: pointer;
+}
+.footer-products {
+    font-size: 20px;
+}
+.footer-copy {
+    color: rgb(75, 75, 75);
+    font-size: 18px;
+    font-family: sans-serif;
 }
